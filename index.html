@@ -25,9 +25,9 @@
 
       </header>
       <section>
-        <h3>
+        <h1>
 
-<a id="home">Welcome to my website</a></h3>
+<a id="home">Welcome to my website</a></h1>
 
 <p>Hi! My name is Raphael Aggio and I would like to welcome you to my website. I am a Brazilian <em>biologist/electronic technitian</em> working on bioinformatics applied to <em>metabolomics</em> and <em>systems biology</em>. In the last couple of years I have developed few computer tools to analyse and interpret metabolomics data. Therefore, I have developed this simple website in order to store these computer tools and share my scientific achievements. Feel free to brownse around and please contact me if you have any type of feedback.</p>
 <p>During these years in science I realised that collaboration is the key word to increase both quality and productivity. Thus, I am opened for collaborations on new computer tools and/or on improving the tools I have developed.</p>
@@ -40,27 +40,46 @@ $ git fetch origin
 $ git checkout gh-pages
 </code></pre>
 
-<h3><a id="packages">R packages</a></h3>
+<h1><a id="packages">R packages</a></h1>
 
 <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h1>Metab</h1>
-<p>Metab is an R package developed to process metabolomics data in a high-throughput manner. Metab processes data previously analysed by the Automated Mass Spectral Deconvolution and Identification System (AMDIS) and allows users to perform data normalisation and statistical analyses. Metab has been accepted by Bioconductor but will be available only in the next release of Bioconductor database. In the meanwhile, Metab can be downloaded here.</p>
+<h2>Metab</h2>
+<p align="justify">Metab is an R package developed to process metabolomics data in a high-throughput manner. Metab processes data previously analysed by the <a href="http://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:amdis">Link textAutomated Mass Spectral Deconvolution and Identification System (AMDIS)</a> and allows users to perform data normalisation and statistical analyses. Metab has been accepted by <a href="http://www.bioconductor.org/">Bioconductor</a> but will be available only in the next release of Bioconductor database. In the meanwhile, the source of Metab can be downloaded here.</p>
+<p>For installing Metab, place the source file you just downloaded in your working directory, copy the code below and paste it at your R console:</p>
+<pre><code>
+### Install required packages
+source("http://bioconductor.org/biocLite.R")
+biocLite(c("xcms", "svDialogs", "pander”))
+### Install Metab
+install.packages(“Metab_0.99.7.tar.gz", type = "source")
+</code></pre>
 
-<h3>
-<a id="science">Science</a></h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>PAPi</h2>
+<p align="justify">PAPi is an R package developed to predict the activity of metabolic pathways based solely on metabolomics data sets. Based on the number and abundances of metabolites identified per metabolic pathway, PAPi calculates the activity score of metabolic pathways in the Kyoto Encyclopedia of Genes and Genomes (KEGG). PAPi is available at <a href="http://www.bioconductor.org/packages/release/bioc/html/PAPi.html">Bioconductor</a></p>
+<p align="justify">Alternativelly, you can install PAPi direct from your R console. Just copy the code bellow and paste it at your R console:</p> 
+<pre><code>
+source("http://bioconductor.org/biocLite.R")
+biocLite("PAPi")
+</code></pre>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h2>MetaBox</h2>
+<p align="justify">MetaBox is an R package developed to identify compounds analysed by GC-MS by scoring chromatographic peaks according to their likelihood of representing metabolites defined in a mass spectral library. MetaBox has been submitted for publication and will be available for downloading soon.</p>
+<p>For installing Metab, place the source file you just downloaded in your working directory, copy the code below and paste it at your R console:</p>
+<pre><code>
+### Install required packages
+source("http://bioconductor.org/biocLite.R")
+biocLite(c("xcms", "svDialogs", "pander”))
+### Install Metab
+install.packages(“Metab_0.99.7.tar.gz", type = "source")
+</code></pre>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h2><a id="science">Science</a></h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Here I will ad my science stuff.</p>
+
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
