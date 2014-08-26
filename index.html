@@ -29,26 +29,17 @@
 
 <a id="home">Welcome to my website</a></h1>
 
-<p>Hi! My name is Raphael Aggio and I would like to welcome you to my website. I am a Brazilian <em>biologist/electronic technitian</em> working on bioinformatics applied to <em>metabolomics</em> and <em>systems biology</em>. In the last couple of years I have developed few computer tools to analyse and interpret metabolomics data. Therefore, I have developed this simple website in order to store these computer tools and share my scientific achievements. Feel free to brownse around and please contact me if you have any type of feedback.</p>
-<p>During these years in science I realised that collaboration is the key word to increase both quality and productivity. Thus, I am opened for collaborations on new computer tools and/or on improving the tools I have developed.</p>
+<p align="justify">Hi! My name is Raphael Aggio and I would like to welcome you to my website. I am a Brazilian <em>biologist/electronic technitian</em> working on bioinformatics applied to <em>metabolomics</em> and <em>systems biology</em>. In the last couple of years I have developed few computer tools to analyse and interpret metabolomics data. Therefore, I have developed this simple website in order to store these computer tools and share my scientific achievements. Feel free to brownse around and please contact me if you have any type of feedback.</p>
+<p align="justify">During these years in science I realised that collaboration is the key word to increase both quality and productivity. Thus, I am opened for collaborations on new computer tools and/or on improving the tools I have developed.</p>
 <p>Cheers.</p>
 <p>Raphael Aggio</p>
 
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
 <h1><a id="packages">R packages</a></h1>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
 <h2>Metab</h2>
 <p align="justify">Metab is an R package developed to process metabolomics data in a high-throughput manner. Metab processes data previously analysed by the <a href="http://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:amdis">Link textAutomated Mass Spectral Deconvolution and Identification System (AMDIS)</a> and allows users to perform data normalisation and statistical analyses. Metab has been accepted by <a href="http://www.bioconductor.org/">Bioconductor</a> but will be available only in the next release of Bioconductor database. In the meanwhile, the source of Metab can be downloaded here.</p>
 <p>For installing Metab, place the source file you just downloaded in your working directory, copy the code below and paste it at your R console:</p>
-<pre><code>
-### Install required packages
+<pre><code>### Install required packages
 source("http://bioconductor.org/biocLite.R")
 biocLite(c("xcms", "svDialogs", "pander”))
 ### Install Metab
@@ -59,8 +50,7 @@ install.packages(“Metab_0.99.7.tar.gz", type = "source")
 <h2>PAPi</h2>
 <p align="justify">PAPi is an R package developed to predict the activity of metabolic pathways based solely on metabolomics data sets. Based on the number and abundances of metabolites identified per metabolic pathway, PAPi calculates the activity score of metabolic pathways in the Kyoto Encyclopedia of Genes and Genomes (KEGG). PAPi is available at <a href="http://www.bioconductor.org/packages/release/bioc/html/PAPi.html">Bioconductor</a></p>
 <p align="justify">Alternativelly, you can install PAPi direct from your R console. Just copy the code bellow and paste it at your R console:</p> 
-<pre><code>
-source("http://bioconductor.org/biocLite.R")
+<pre><code>source("http://bioconductor.org/biocLite.R")
 biocLite("PAPi")
 </code></pre>
 
@@ -68,8 +58,7 @@ biocLite("PAPi")
 <h2>MetaBox</h2>
 <p align="justify">MetaBox is an R package developed to identify compounds analysed by GC-MS by scoring chromatographic peaks according to their likelihood of representing metabolites defined in a mass spectral library. MetaBox has been submitted for publication and will be available for downloading soon.</p>
 <p>For installing Metab, place the source file you just downloaded in your working directory, copy the code below and paste it at your R console:</p>
-<pre><code>
-### Install required packages
+<pre><code>### Install required packages
 source("http://bioconductor.org/biocLite.R")
 biocLite(c("xcms", "svDialogs", "pander”))
 ### Install Metab
