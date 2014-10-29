@@ -56,13 +56,13 @@ biocLite("PAPi")
 
 
 <h2>MetaBox</h2>
-<p align="justify">MetaBox is an R package developed to identify compounds analysed by GC-MS by scoring chromatographic peaks according to their likelihood of representing metabolites defined in a mass spectral library. MetaBox has been submitted for publication and will be available for downloading soon.</p>
-<p>For installing Metab, place the source file you just downloaded in your working directory, copy the code below and paste it at your R console:</p>
+<p align="justify">MetaBox is an R package developed to identify compounds analysed by GC-MS by scoring chromatographic peaks according to their likelihood of representing metabolites defined in a mass spectral library. MetaBox has been accepted for publication and soon it will be part of the Bioconductor database. In the meanwhile, you can download MetaBox <a href="r_packages/metabox/MetaBox_lastVersion.tar.gz">here</a></p>
+<p>For installing MetaBox in R, place the source file you just downloaded in your working directory, copy the code below and paste it at your R console:</p>
 <pre><code>### Install required packages
 source("http://bioconductor.org/biocLite.R")
-biocLite(c("xcms", "svDialogs", "pander”))
-### Install Metab
-install.packages(“Metab_0.99.7.tar.gz", type = "source")
+biocLite(c("xcms", "svDialogs", "pander", "MassSpecWavelet"))
+### Install MetaBox
+install.packages(“MetaBox_lastVersion.tar.gz", type = "source")
 </code></pre>
 
 <h2><a id="science">Science</a></h2>
