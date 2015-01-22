@@ -27,24 +27,43 @@
       <section>
         <h1>
 
-<a id="home">Welcome to my website</a></h1>
+<a id="home">Welcome</a></h1>
 
-<p align="justify">Hi! My name is Raphael Aggio and I would like to welcome you to my website. I am a Brazilian <em>biologist/electronic technitian</em> working on bioinformatics applied to <em>metabolomics</em> and <em>systems biology</em>. In the last couple of years I have developed few computer tools to analyse and interpret metabolomics data. Therefore, I have developed this simple website in order to store these computer tools and share my scientific achievements. Feel free to brownse around and please contact me if you have any type of feedback.</p>
-<p align="justify">During these years in science I realised that collaboration is the key word to increase both quality and productivity. Thus, I am opened for collaborations on new computer tools and/or on improving the tools I have developed.</p>
-<p>Cheers.</p>
+<p align="justify">My name is Raphael Aggio and I would like to welcome you to my website. I am an <em>electronic technician</em> and a <em>biologist</em>. In the beginning of my career I worked for about 5 years at Philips Telecommunications - Brazil, performing installation and maintenance of telephone systems. I then decided to study biology and during most of my bachelors I worked with macro-ecology, etno-biology, fisheries and conservation. When I was about to finish my bachelors I then received a proposal to do a PhD at The University of Auckland - New Zealand, where I was first introduced to Metabolomics and Systems Biology. My PhD was then developed on the analysis of microbial metabolome, construction of metabolic networks for flux balance analysis (FBA) and the development of computer tools to improve the quality and the speed of pipelines for Metabolomics and Systems Biology. I recently created this website in order to store and share some of the computer tools I have developed in the last few years. Feel free to brownse around and please contact me if you have any feedback.</p>
+<p align="justify">At the moment I am a Research Associate at The University of Liverpool, where I am applying bioinformatics to classify metabolomics data based on extracted patterns of Volatile Organic Compounds (VOCs). I am certainly opened for collaborations involving the analysis of interesting datasets and/or to develop new computer tools. Of course, you are more than welcome to contribute and improve any of the tools I have developed.</p>
+<p>Best wishes.</p>
 <p>Raphael Aggio - raphael.aggio [at] gmail.com</p>
 
 <h1><a id="packages">R packages</a></h1>
 
 <h2>Metab</h2>
-<p align="justify">Metab is an R package developed to process metabolomics data in a high-throughput manner. Metab processes data previously analysed by the <a href="http://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:amdis">Link textAutomated Mass Spectral Deconvolution and Identification System (AMDIS)</a> and allows users to perform data normalisation and statistical analyses. Metab has been accepted by <a href="http://www.bioconductor.org/">Bioconductor</a> but will be available only in the next release of Bioconductor database. In the meanwhile, the source of Metab can be downloaded <a href="r_packages /metab/Metab_0.99.7.tar.gz">here</a>.</p>
-<p>For installing Metab, place the source file you just downloaded in your working directory, copy the code below and paste it at your R console:</p>
-<pre><code>### Install required packages
-source("http://bioconductor.org/biocLite.R")
-biocLite(c("xcms", "svDialogs", "pander”))
-### Install Metab
-install.packages(“Metab_0.99.7.tar.gz", type = "source")
+<p align="justify">Metab is an R package developed to process metabolomics data in a high-throughput manner. Metab processes data previously analysed by the <a href="http://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:amdis">Automated Mass Spectral Deconvolution and Identification System (AMDIS)</a> and allows users to perform data normalisation and statistical analyses. Metab is available at the <a href="http://www.bioconductor.org/">Bioconductor database</a> and it can also be downloaded <a href="r_packages /metab/Metab_0.99.7.tar.gz">here</a>.</p>
+
+<h3>Requirements</h3>
+<p>Metab requires 3 additional packages: <a href="http://www.bioconductor.org/packages/release/bioc/html/xcms.html">xcms</a>, <a href="http://cran.r-project.org/web/packages/svDialogs/index.html">svDialogs</a> and <a href="http://cran.fhcrc.org/web/packages/pander/index.html">pander</a>. These packages can also be downloaded from <a href="http://www.bioconductor.org/">Bioconductor</a> or <a href="http://cran.r-project.org/index.html">CRAN</a>.</p>
+
+<h3>Installing Metab from Bioconductor</h3>
+<p>If you decide to install Metab from Bioconductor, you can copy the following code and paste it in your R console. It should download Metab, its required packages and perform all the installation:</p>
+<pre><code>
+    ### Load biocLite - a Bioconductor script to automate the download and installation of required packages #####
+    source("http://bioconductor.org/biocLite.R")
+    ### Install Metab ####
+    biocLite("Metab")
 </code></pre>
+
+
+<h3>Installing Metab from source file</h3>
+<p>If you decide to install Metab using the source file available <a href="r_packages /metab/Metab_0.99.7.tar.gz">here</a>, you can follow the steps described bellow:</p>
+<ul>
+    <li>Place the source file you just downloaded in your working directory;</li>
+    <li>Copy the code below and paste it at your R console:</li>
+</ul>
+<pre><code>### Install required packages
+            source("http://bioconductor.org/biocLite.R")
+            biocLite(c("xcms", "svDialogs", "pander”))
+            ### Install Metab
+            install.packages(“Metab_0.99.7.tar.gz", type = "source")
+    </code></pre>
 
 
 <h2>PAPi</h2>
